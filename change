@@ -1,0 +1,16 @@
+#!/bin/bash
+VERSION="0.1"
+USAGE="Usage: changext from to"
+
+# --- Options processing -------------------------------------------
+if [ $# == 0 ] ; then
+    echo $USAGE
+    exit 1;
+else
+	
+	 for file in *.$1
+	   do
+	     mv "$file" "${file%.$1}.$2"
+	   done
+	
+fi
