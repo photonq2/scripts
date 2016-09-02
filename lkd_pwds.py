@@ -98,7 +98,6 @@ if args.src_file != None:
         print("[+] Opening file " + args.src_file + " ...")
         f_src= open(args.src_file,'r')
         pattern = re.compile(r"([\w\-\.]+[@]\w[\w\-]+\.+[\w\-]+)")
-        #pattern = re.compile(r"(^[_A-Za-z0-9-+]+(.[_A-Za-z0-9-]+)[@][A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(.[A-Za-z]+))")
 
         src_list = re.findall(pattern, f_src.read())
         pprint(src_list)
