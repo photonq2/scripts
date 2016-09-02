@@ -1,6 +1,6 @@
 #!/bin/bash
 VERSION="0.1"
-USAGE="Usage: changext from to"
+USAGE="Usage: changext FROM TO"
 
 # --- Options processing -------------------------------------------
 if [ $# == 0 ] ; then
